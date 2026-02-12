@@ -1,9 +1,9 @@
-import type { GlobalConfig } from 'payload'
+import type { Field, GlobalConfig } from 'payload';
 
-import { admins } from '../collections/access/admins'
-import { anyone } from '../collections/access/anyone'
+import { admins } from '../collections/access/admins';
+import { anyone } from '../collections/access/anyone';
 
-const navItemFields = [
+const navItemFields: Field[] = [
   {
     name: 'label',
     type: 'text' as const,
@@ -24,7 +24,7 @@ const navItemFields = [
   {
     name: 'page',
     type: 'relationship' as const,
-    relationTo: 'pages',
+    relationTo: 'pages' as const,
     admin: {
       condition: (_: unknown, siblingData: Record<string, unknown>) => siblingData?.type === 'page',
       description: 'Select an internal page.',
@@ -44,7 +44,7 @@ const navItemFields = [
     type: 'checkbox' as const,
     defaultValue: false,
   },
-]
+];
 
 export const Navigation: GlobalConfig = {
   slug: 'navigation',
@@ -77,4 +77,4 @@ export const Navigation: GlobalConfig = {
       fields: navItemFields,
     },
   ],
-}
+};
