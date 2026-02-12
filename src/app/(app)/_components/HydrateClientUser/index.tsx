@@ -13,7 +13,7 @@ export const HydrateClientUser: React.FC<{
 
   useEffect(() => {
     setUser(user);
-    setPermissions(permissions);
+    setPermissions(permissions as any);
   }, [user, permissions, setUser, setPermissions]);
 
   return null;
