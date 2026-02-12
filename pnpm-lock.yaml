@@ -26,6 +26,9 @@ importers:
       cross-env:
         specifier: ^7.0.3
         version: 7.0.3
+      escape-html:
+        specifier: ^1.0.3
+        version: 1.0.3
       next:
         specifier: ^15.5.12
         version: 15.5.12(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(sass@1.77.4)
@@ -41,6 +44,9 @@ importers:
       react-hook-form:
         specifier: ^7.51.3
         version: 7.68.0(react@19.2.1)
+      slate:
+        specifier: ^0.123.0
+        version: 0.123.0
     devDependencies:
       '@payloadcms/graphql':
         specifier: ^3.76.1
@@ -51,6 +57,9 @@ importers:
       '@types/ejs':
         specifier: ^3.1.5
         version: 3.1.5
+      '@types/escape-html':
+        specifier: ^1.0.4
+        version: 1.0.4
       '@types/react':
         specifier: 19.2.9
         version: 19.2.9
@@ -1203,6 +1212,9 @@ packages:
 
   '@types/ejs@3.1.5':
     resolution: {integrity: sha512-nv+GSx77ZtXiJzwKdsASqi+YQ5Z7vwHsTP0JY2SiQgjGckkBRKZnk8nIM+7oUZ1VCtuTz0+By4qVR7fqzp/Dfg==}
+
+  '@types/escape-html@1.0.4':
+    resolution: {integrity: sha512-qZ72SFTgUAZ5a7Tj6kf2SHLetiH5S6f8G5frB2SPQ3EyF02kxdyBFf4Tz4banE3xCgGnKgWLt//a6VuYHKYJTg==}
 
   '@types/estree-jsx@1.0.5':
     resolution: {integrity: sha512-52CcUVNFyfb1A2ALocQw/Dd1BQFNmSdkuC3BkZ6iqhdMfQz7JWOFRuJFloOzjk+6WijU56m9oKXFAXc7o3Towg==}
@@ -3193,6 +3205,9 @@ packages:
   sisteransi@1.0.5:
     resolution: {integrity: sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg==}
 
+  slate@0.123.0:
+    resolution: {integrity: sha512-Oon3HR/QzJQBjuOUJT1jGGlp8Ff7t3Bkr/rJ2lDqxNT4H+cBnXpEVQ/si6hn1ZCHhD2xY/2N91PQoH/rD7kxTg==}
+
   sonic-boom@4.2.0:
     resolution: {integrity: sha512-INb7TM37/mAcsGmc9hyyI6+QR3rR1zVRu36B0NeGXKnOOLiZOfER5SA+N7X7k3yUYRzLWafduTDvJAfDswwEww==}
 
@@ -4670,6 +4685,8 @@ snapshots:
       '@types/ms': 2.1.0
 
   '@types/ejs@3.1.5': {}
+
+  '@types/escape-html@1.0.4': {}
 
   '@types/estree-jsx@1.0.5':
     dependencies:
@@ -7012,6 +7029,8 @@ snapshots:
   simple-wcswidth@1.1.2: {}
 
   sisteransi@1.0.5: {}
+
+  slate@0.123.0: {}
 
   sonic-boom@4.2.0:
     dependencies:

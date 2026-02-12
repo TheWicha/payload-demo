@@ -1,6 +1,6 @@
 'use client'
 
-import type { Permissions } from 'payload/auth'
+import type { Permissions } from 'payload'
 
 import React, { createContext, useCallback, use, useEffect, useState } from 'react'
 
