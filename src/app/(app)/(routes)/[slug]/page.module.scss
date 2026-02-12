@@ -1,0 +1,241 @@
+@use '../../_css/queries.scss' as *;
+
+// --- Hero Block ---
+.hero {
+  position: relative;
+  padding: calc(var(--base) * 4) 0;
+  margin-bottom: calc(var(--base) * 3);
+  text-align: center;
+}
+
+.heroBg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.15;
+  border-radius: 12px;
+}
+
+.heroContent {
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.heroHeading {
+  font-size: 48px;
+  line-height: 1.1;
+  margin: 0 0 var(--base);
+
+  @include mid-break {
+    font-size: 36px;
+  }
+}
+
+.heroSubheading {
+  font-size: 20px;
+  line-height: 1.5;
+  color: var(--theme-elevation-600);
+  margin: 0 0 calc(var(--base) * 1.5);
+
+  @include mid-break {
+    font-size: 18px;
+  }
+}
+
+.heroCta {
+  display: inline-block;
+  padding: 12px 32px;
+  background: var(--theme-elevation-1000);
+  color: var(--theme-elevation-0);
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: opacity 150ms ease;
+
+  &:hover {
+    opacity: 0.85;
+  }
+}
+
+// --- Content Block ---
+.contentBlock {
+  display: grid;
+  gap: calc(var(--base) * 2);
+  margin-bottom: calc(var(--base) * 3);
+
+  &.columns--full {
+    grid-template-columns: 1fr;
+  }
+
+  &.columns--half {
+    grid-template-columns: repeat(2, 1fr);
+
+    @include mid-break {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &.columns--third {
+    grid-template-columns: repeat(3, 1fr);
+
+    @include mid-break {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+.column {
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+// --- Media Block ---
+.mediaBlock {
+  margin-bottom: calc(var(--base) * 3);
+
+  figure {
+    margin: 0;
+  }
+
+  img {
+    border-radius: 8px;
+  }
+
+  figcaption {
+    text-align: center;
+    font-size: 14px;
+    color: var(--theme-elevation-500);
+    margin-top: calc(var(--base) * 0.5);
+  }
+
+  &.media--left {
+    max-width: 50%;
+
+    @include mid-break {
+      max-width: 100%;
+    }
+  }
+
+  &.media--center {
+    max-width: 100%;
+  }
+
+  &.media--right {
+    max-width: 50%;
+    margin-left: auto;
+
+    @include mid-break {
+      max-width: 100%;
+    }
+  }
+}
+
+// --- CTA Block ---
+.ctaBlock {
+  text-align: center;
+  padding: calc(var(--base) * 3);
+  border-radius: 12px;
+  margin-bottom: calc(var(--base) * 3);
+
+  &.cta--primary {
+    background: var(--theme-elevation-50);
+    border: 1px solid var(--theme-elevation-150);
+  }
+
+  &.cta--secondary {
+    background: transparent;
+    border: 2px solid var(--theme-elevation-200);
+  }
+}
+
+.ctaHeading {
+  font-size: 28px;
+  margin: 0 0 calc(var(--base) * 0.5);
+}
+
+.ctaDescription {
+  font-size: 16px;
+  color: var(--theme-elevation-600);
+  margin: 0 0 calc(var(--base) * 1.5);
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ctaButton {
+  display: inline-block;
+  padding: 12px 32px;
+  background: var(--theme-elevation-1000);
+  color: var(--theme-elevation-0);
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: opacity 150ms ease;
+
+  &:hover {
+    opacity: 0.85;
+  }
+}
+
+// --- Archive Block ---
+.archiveBlock {
+  margin-bottom: calc(var(--base) * 3);
+}
+
+.archiveHeading {
+  font-size: 28px;
+  margin: 0 0 var(--base);
+}
+
+.archiveGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--base);
+
+  @include mid-break {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include small-break {
+    grid-template-columns: 1fr;
+  }
+}
+
+.archiveCard {
+  padding: var(--base);
+  border: 1px solid var(--theme-elevation-150);
+  border-radius: 8px;
+  text-decoration: none;
+  transition: border-color 200ms ease;
+
+  &:hover {
+    border-color: var(--theme-elevation-400);
+  }
+}
+
+.archiveCategory {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--theme-success-500);
+}
+
+.archiveTitle {
+  font-size: 18px;
+  margin: calc(var(--base) * 0.25) 0 calc(var(--base) * 0.5);
+}
+
+.archiveExcerpt {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--theme-elevation-500);
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

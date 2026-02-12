@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(findstr:*)",
+      "Bash(pnpm update:*)",
+      "Bash(pnpm approve-builds:*)",
+      "Bash(pnpm config set:*)",
+      "Bash(pnpm install:*)",
+      "Bash(npx cross-env:*)",
+      "Bash(dir:*)",
+      "Bash(npx payload:*)",
+      "Bash(npm ls:*)"
+    ]
+  }
+}

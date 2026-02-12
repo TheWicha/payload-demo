@@ -1,0 +1,73 @@
+.richText {
+  h1, h2, h3, h4, h5, h6 {
+    margin: 1.5em 0 0.5em;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  p {
+    margin: 0.75em 0;
+  }
+
+  blockquote {
+    border-left: 3px solid var(--theme-elevation-400);
+    padding-left: var(--base);
+    margin: var(--base) 0;
+    font-style: italic;
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid var(--theme-elevation-200);
+    margin: calc(var(--base) * 1.5) 0;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin: var(--base) 0;
+  }
+
+  code {
+    background: var(--theme-elevation-100);
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: var(--font-mono);
+    font-size: 0.9em;
+  }
+
+  a {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: var(--base) 0;
+    font-size: 0.95em;
+  }
+
+  th,
+  td {
+    border: 1px solid var(--theme-elevation-300);
+    padding: 10px 14px;
+    text-align: left;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  th {
+    background: var(--theme-elevation-100);
+    font-weight: 600;
+  }
+
+  tr:nth-child(even) td {
+    background: var(--theme-elevation-50);
+  }
+}

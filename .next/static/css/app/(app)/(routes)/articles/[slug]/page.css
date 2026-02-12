@@ -1,0 +1,210 @@
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/.pnpm/next@15.5.12_react-dom@19.2_2f063b4570924546c23652ef47559849/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/.pnpm/next@15.5.12_react-dom@19.2_2f063b4570924546c23652ef47559849/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./node_modules/.pnpm/next@15.5.12_react-dom@19.2_2f063b4570924546c23652ef47559849/node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[14].oneOf[7].use[4]!./node_modules/.pnpm/next@15.5.12_react-dom@19.2_2f063b4570924546c23652ef47559849/node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[14].oneOf[7].use[5]!./src/app/(app)/_components/LexicalRenderer/index.module.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.LexicalRenderer_richText__20uD_ h1, .LexicalRenderer_richText__20uD_ h2, .LexicalRenderer_richText__20uD_ h3, .LexicalRenderer_richText__20uD_ h4, .LexicalRenderer_richText__20uD_ h5, .LexicalRenderer_richText__20uD_ h6 {
+  margin: 1.5em 0 0.5em;
+}
+.LexicalRenderer_richText__20uD_ h1:first-child, .LexicalRenderer_richText__20uD_ h2:first-child, .LexicalRenderer_richText__20uD_ h3:first-child, .LexicalRenderer_richText__20uD_ h4:first-child, .LexicalRenderer_richText__20uD_ h5:first-child, .LexicalRenderer_richText__20uD_ h6:first-child {
+  margin-top: 0;
+}
+.LexicalRenderer_richText__20uD_ p {
+  margin: 0.75em 0;
+}
+.LexicalRenderer_richText__20uD_ blockquote {
+  border-left: 3px solid var(--theme-elevation-400);
+  padding-left: var(--base);
+  margin: var(--base) 0;
+  font-style: italic;
+}
+.LexicalRenderer_richText__20uD_ hr {
+  border: none;
+  border-top: 1px solid var(--theme-elevation-200);
+  margin: calc(var(--base) * 1.5) 0;
+}
+.LexicalRenderer_richText__20uD_ img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin: var(--base) 0;
+}
+.LexicalRenderer_richText__20uD_ code {
+  background: var(--theme-elevation-100);
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+}
+.LexicalRenderer_richText__20uD_ a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.LexicalRenderer_richText__20uD_ table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: var(--base) 0;
+  font-size: 0.95em;
+}
+.LexicalRenderer_richText__20uD_ th,
+.LexicalRenderer_richText__20uD_ td {
+  border: 1px solid var(--theme-elevation-300);
+  padding: 10px 14px;
+  text-align: left;
+}
+.LexicalRenderer_richText__20uD_ th p,
+.LexicalRenderer_richText__20uD_ td p {
+  margin: 0;
+}
+.LexicalRenderer_richText__20uD_ th {
+  background: var(--theme-elevation-100);
+  font-weight: 600;
+}
+.LexicalRenderer_richText__20uD_ tr:nth-child(even) td {
+  background: var(--theme-elevation-50);
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/.pnpm/next@15.5.12_react-dom@19.2_2f063b4570924546c23652ef47559849/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/.pnpm/next@15.5.12_react-dom@19.2_2f063b4570924546c23652ef47559849/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./node_modules/.pnpm/next@15.5.12_react-dom@19.2_2f063b4570924546c23652ef47559849/node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[14].oneOf[7].use[4]!./node_modules/.pnpm/next@15.5.12_react-dom@19.2_2f063b4570924546c23652ef47559849/node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[14].oneOf[7].use[5]!./src/app/(app)/(routes)/articles/[slug]/page.module.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.page_article__InSv3 {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-bottom: calc(var(--base) * 4);
+}
+
+.page_breadcrumbs__w1SXe {
+  font-size: 14px;
+  color: var(--theme-elevation-500);
+  margin-bottom: calc(var(--base) * 1.5);
+}
+.page_breadcrumbs__w1SXe a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.page_breadcrumbs__w1SXe a:hover {
+  color: var(--theme-text);
+}
+
+.page_separator__gRv_b {
+  margin: 0 8px;
+}
+
+.page_header__RjrE1 {
+  margin-bottom: calc(var(--base) * 2);
+}
+
+.page_category__g8arb {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--theme-success-500);
+}
+
+.page_title__wJ2lp {
+  font-size: 42px;
+  line-height: 1.15;
+  margin: calc(var(--base) * 0.5) 0;
+}
+@media (max-width: 1024px) {
+  .page_title__wJ2lp {
+    font-size: 32px;
+  }
+}
+
+.page_excerpt__kbjn2 {
+  font-size: 20px;
+  line-height: 1.5;
+  color: var(--theme-elevation-600);
+  margin: 0 0 var(--base);
+}
+@media (max-width: 1024px) {
+  .page_excerpt__kbjn2 {
+    font-size: 18px;
+  }
+}
+
+.page_meta__pXUj_ {
+  display: flex;
+  gap: var(--base);
+  font-size: 14px;
+  color: var(--theme-elevation-500);
+}
+
+.page_author__njVzk {
+  font-weight: 500;
+}
+
+.page_heroImage__hKjFV {
+  margin-bottom: calc(var(--base) * 2);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.page_heroImage__hKjFV img {
+  width: 100%;
+  height: auto;
+}
+
+.page_tags__rP_2H {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: calc(var(--base) * 2);
+}
+
+.page_tag__o1NSG {
+  padding: 4px 12px;
+  background: var(--theme-elevation-50);
+  border: 1px solid var(--theme-elevation-150);
+  border-radius: 14px;
+  font-size: 13px;
+  color: var(--theme-elevation-600);
+}
+
+.page_content__0iUnm {
+  font-size: 18px;
+  line-height: 1.75;
+}
+
+.page_related__FmGv9 {
+  margin-top: calc(var(--base) * 3);
+  padding-top: calc(var(--base) * 2);
+  border-top: 1px solid var(--theme-elevation-150);
+}
+.page_related__FmGv9 h3 {
+  margin-bottom: var(--base);
+}
+
+.page_relatedGrid__FQTAg {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: var(--base);
+  gap: var(--base);
+}
+@media (max-width: 768px) {
+  .page_relatedGrid__FQTAg {
+    grid-template-columns: 1fr;
+  }
+}
+
+.page_relatedCard__KthUo {
+  padding: var(--base);
+  border: 1px solid var(--theme-elevation-150);
+  border-radius: 8px;
+  text-decoration: none;
+  transition: border-color 150ms ease;
+}
+.page_relatedCard__KthUo:hover {
+  border-color: var(--theme-elevation-400);
+}
+.page_relatedCard__KthUo h4 {
+  margin: 0 0 calc(var(--base) * 0.25);
+  font-size: 16px;
+}
+.page_relatedCard__KthUo p {
+  margin: 0;
+  font-size: 14px;
+  color: var(--theme-elevation-500);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

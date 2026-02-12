@@ -1,0 +1,60 @@
+@use '../../_css/queries.scss' as *;
+
+.header {
+  margin-bottom: calc(var(--base) * 2);
+}
+
+.subtitle {
+  color: var(--theme-elevation-500);
+  margin-top: calc(var(--base) * 0.25);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: calc(var(--base) * 1.5);
+
+  @include mid-break {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include small-break {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: calc(var(--base) * 1.5);
+  border: 1px solid var(--theme-elevation-150);
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 200ms ease;
+
+  &:hover {
+    border-color: var(--theme-elevation-400);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+}
+
+.cardTitle {
+  font-size: 22px;
+  margin: 0 0 calc(var(--base) * 0.5);
+}
+
+.cardDescription {
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--theme-elevation-600);
+  margin: 0 0 var(--base);
+  flex: 1;
+}
+
+.cardCount {
+  font-size: 13px;
+  color: var(--theme-elevation-500);
+  padding-top: calc(var(--base) * 0.5);
+  border-top: 1px solid var(--theme-elevation-100);
+}
