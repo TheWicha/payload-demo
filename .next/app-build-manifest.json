@@ -1,3 +1,45 @@
 {
-  "pages": {}
+  "pages": {
+    "/(payload)/api/[...slug]/route": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(payload)/api/[...slug]/route.js"
+    ],
+    "/(app)/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(app)/layout.css",
+      "static/chunks/app/(app)/layout.js"
+    ],
+    "/(app)/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(app)/page.css",
+      "static/chunks/app/(app)/page.js"
+    ],
+    "/(app)/(routes)/[slug]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(app)/(routes)/[slug]/page.css",
+      "static/chunks/app/(app)/(routes)/[slug]/page.js"
+    ],
+    "/(payload)/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(payload)/layout.css",
+      "static/chunks/app/(payload)/layout.js"
+    ],
+    "/(payload)/admin/[[...segments]]/not-found": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(payload)/admin/[[...segments]]/not-found.css",
+      "static/chunks/app/(payload)/admin/[[...segments]]/not-found.js"
+    ],
+    "/(payload)/admin/[[...segments]]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(payload)/admin/[[...segments]]/page.css",
+      "static/chunks/app/(payload)/admin/[[...segments]]/page.js"
+    ]
+  }
 }
