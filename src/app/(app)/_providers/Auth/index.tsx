@@ -85,7 +85,6 @@ export const AuthProvider: React.FC<{ api?: 'gql' | 'rest'; children: React.Reac
     }
   }, [api]);
 
-  // On mount, get user and set
   useEffect(() => {
     const fetchMe = async () => {
       if (api === 'rest') {

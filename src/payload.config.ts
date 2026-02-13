@@ -1,3 +1,4 @@
+import { vercelBlobStorage } from '@payloadcms/storage-vercel-blob';
 import { vercelPostgresAdapter } from '@payloadcms/db-vercel-postgres';
 import {
   AlignFeature,
@@ -69,6 +70,16 @@ export default buildConfig({
       connectionString: process.env.DATABASE_URL,
     },
   }),
+  plugins: [
+    vercelBlobStorage({
+      token: process.env.BLOB_READ_WRITE_TOKEN,
+      collections: {
+        media: {
+          prefix: 'media',
+        },
+      },
+    }),
+  ],
   editor: lexicalEditor({
     features: ({ defaultFeatures }) => [
       ...defaultFeatures,

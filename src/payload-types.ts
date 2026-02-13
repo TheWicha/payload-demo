@@ -163,6 +163,7 @@ export interface Media {
   decorative?: boolean | null;
   alt?: string | null;
   caption?: string | null;
+  prefix?: string | null;
   updatedAt: string;
   createdAt: string;
   url?: string | null;
@@ -535,6 +536,7 @@ export interface MediaSelect<T extends boolean = true> {
   decorative?: T;
   alt?: T;
   caption?: T;
+  prefix?: T;
   updatedAt?: T;
   createdAt?: T;
   url?: T;
